@@ -13,6 +13,10 @@ class Question(models.Model):
         now = timezone.now()
         return now - datetime.timedelta(days=1) <= self.pub_date <= now
 
+    was_publish_recently.admin_order_field = 'pub_date'
+    was_publish_recently.boolean = True
+    was_publish_recently.short_description = 'Publicado recentemente?'
+
     def __str__(self):
         return self.question_text
 
