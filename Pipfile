@@ -9,7 +9,7 @@ v = {editable = true,version = "*"}
 ipdb = "*"
 
 [packages]
-django = "==2.2.8"
+django = "==2.2.13"
 
 [requires]
 python_version = "3.8"
